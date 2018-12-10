@@ -27,4 +27,8 @@ public class CarPark {
 		return sorted;
 	}
 
+	public List<Car> getCars() {
+		return cars;
+	}
+
 }

@@ -22,10 +22,14 @@ public class Car {
 		return price;
 	}
 
+	public double getFuelConsumption() {
+		return fuelConsumption;
+	}
+
 	@Override
 	public String toString() {
-		return "Mark: " + model + "; /n price: " + price + "$;/n maxSpeed: " + maxSpeed + " kmph;/n fuel consumption: "
-				+ fuelConsumption + " per 100 km; engine: " + engine;
+		return "Mark: " + model + ";\n\tprice: " + price + "$;\n\tmaxSpeed: " + maxSpeed
+				+ " kmph;\n\tfuel consumption: " + fuelConsumption + " per 100 km;\n\tengine: " + engine;
 	}
 
 }
