@@ -6,6 +6,10 @@ import by.owl.coursesproject.taxopark.exception.UnknownModelException;
 
 public class CarFactory {
 
+	private CarFactory() {
+
+	}
+
 	public static Car create(CarModel model) {
 		switch (model) {
 		case KIA_CEEDS:
