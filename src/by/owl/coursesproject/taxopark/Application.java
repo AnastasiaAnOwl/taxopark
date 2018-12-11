@@ -46,20 +46,25 @@ public class Application {
 					line = br.readLine();
 					switch (line.charAt(0)) {
 					case '1':
-						List<Car> sortedByPrice = carPark
-								.sort((Car car0, Car car1) -> car0.getPrice() - car1.getPrice());
+						carPark.sort((Car car0, Car car1) -> car0.getPrice() - car1.getPrice());
+						carPark.getCars().forEach(System.out::println);
+						break;
 					case '2':
-						List<Car> sortedBySpeed = carPark
-								.sort((Car car0, Car car1) -> car0.getMaxSpeed() - car1.getMaxSpeed());
+						carPark.sort((Car car0, Car car1) -> car0.getMaxSpeed() - car1.getMaxSpeed());
+						carPark.getCars().forEach(System.out::println);
+						break;
 					case '3':
-						List<Car> sortedByFC = carPark.sort((Car car0,
+						carPark.sort((Car car0,
 								Car car1) -> (int) (car0.getFuelConsumption() * 100 - car1.getFuelConsumption() * 100));
+						carPark.getCars().forEach(System.out::println);
+						break;
 
 					case '4':
 						break INNER_LOOP;
 					}
 				} while (true);
-				carPark.getCars().forEach(System.out::println);
+				break;
+
 			case '2':
 				System.out.println();
 				System.out.println("The total cost of taxi station is " + moneyString);

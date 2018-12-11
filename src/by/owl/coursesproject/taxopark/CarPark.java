@@ -1,6 +1,5 @@
 package by.owl.coursesproject.taxopark;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -22,9 +21,8 @@ public class CarPark {
 	}
 
 	public List<Car> sort(Comparator<Car> comp) {
-		List<Car> sorted = new ArrayList<>(cars);
-		Collections.sort(sorted, comp);
-		return sorted;
+		Collections.sort(cars, comp);
+		return cars;
 	}
 
 	public List<Car> getCars() {
