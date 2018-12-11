@@ -45,7 +45,7 @@ public class Application {
 						System.out.println("2. By maximum speed");
 						System.out.println("3. By fuel consumption");
 						System.out.println("4. Get back to menu");
-						System.out.println("[1, 2, 3, 4] >");
+						System.out.print("[1, 2, 3, 4] >");
 						line = br.readLine();
 						if (line.isEmpty()) {
 							continue INNER_LOOP;
@@ -53,22 +53,23 @@ public class Application {
 							switch (line.charAt(0)) {
 							case '1':
 								carPark.sort((Car car0, Car car1) -> car0.getPrice() - car1.getPrice());
-								carPark.getCars().forEach(System.out::println);
+
 								break;
 							case '2':
 								carPark.sort((Car car0, Car car1) -> car0.getMaxSpeed() - car1.getMaxSpeed());
-								carPark.getCars().forEach(System.out::println);
+
 								break;
 							case '3':
 								carPark.sort((Car car0, Car car1) -> (int) (car0.getFuelConsumption() * 100
 										- car1.getFuelConsumption() * 100));
-								carPark.getCars().forEach(System.out::println);
+
 								break;
 
 							case '4':
 								break INNER_LOOP;
 							}
 						}
+						carPark.getCars().forEach(System.out::println);
 					} while (true);
 					break;
 
