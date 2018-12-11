@@ -32,4 +32,16 @@ public class Car {
 				+ " kmph;\n\tfuel consumption: " + fuelConsumption + " per 100 km;\n\tengine: " + engine;
 	}
 
+	public String getModel() {
+		return model;
+	}
+
+	public Engine getEngine() {
+		return engine;
+	}
+
+	public int getMaxSpeed() {
+		return maxSpeed;
+	}
+
 }
