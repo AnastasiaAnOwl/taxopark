@@ -20,9 +20,8 @@ public class CarPark {
 		return total;
 	}
 
-	public List<Car> sort(Comparator<Car> comp) {
+	public void sort(Comparator<Car> comp) {
 		Collections.sort(cars, comp);
-		return cars;
 	}
 
 	public List<Car> getCars() {
