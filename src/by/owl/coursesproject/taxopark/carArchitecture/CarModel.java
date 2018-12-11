@@ -1,4 +1,4 @@
-package by.owl.coursesproject.taxopark;
+package by.owl.coursesproject.taxopark.carArchitecture;
 
 public enum CarModel {
 
