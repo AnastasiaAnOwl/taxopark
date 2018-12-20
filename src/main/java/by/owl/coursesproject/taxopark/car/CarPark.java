@@ -1,4 +1,4 @@
-package by.owl.coursesproject.taxopark.carArchitecture;
+package by.owl.coursesproject.taxopark.car;
 
 import java.util.Collections;
 import java.util.Comparator;

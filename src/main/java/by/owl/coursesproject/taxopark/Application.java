@@ -4,25 +4,20 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.NumberFormat;
-import java.util.ArrayList;
 import java.util.List;
 
-import by.owl.coursesproject.taxopark.carArchitecture.Car;
-import by.owl.coursesproject.taxopark.carArchitecture.CarFactory;
-import by.owl.coursesproject.taxopark.carArchitecture.CarModel;
-import by.owl.coursesproject.taxopark.carArchitecture.CarPark;
+import by.owl.coursesproject.taxopark.car.Car;
+import by.owl.coursesproject.taxopark.car.CarPark;
+import by.owl.coursesproject.taxopark.car.provider.CarProvider;
+import by.owl.coursesproject.taxopark.car.provider.JsonProvider;
 
 public class Application {
 
+	private static CarProvider provider = new JsonProvider();
+
 	public static void main(String[] args) throws IOException {
 
-		List<Car> cars = new ArrayList<>();
-
-		cars.add(CarFactory.create(CarModel.BMW_X5));
-		cars.add(CarFactory.create(CarModel.KIA_CEEDS));
-		cars.add(CarFactory.create(CarModel.KIA_CEEDS));
-		cars.add(CarFactory.create(CarModel.TOYOTA_COROLLA));
-		cars.add(CarFactory.create(CarModel.OPEL_ZAFIRA));
+		List<Car> cars = provider.getCars();
 
 		CarPark carPark = new CarPark(cars);
 

@@ -1,0 +1,47 @@
+[
+	{
+		"model": "BMW X5",
+		"engine": {
+			"@class": "by.owl.coursesproject.taxopark.engines.Gasoline"
+		},
+		"fuelConsumption": 7.0,
+		"maxSpeed": 300,
+		"price": 15000
+	},
+	{
+		"model": "Kia Ceed's",
+		"engine": {
+			"@class": "by.owl.coursesproject.taxopark.engines.Gasoline"
+		},
+		"fuelConsumption": 6.8,
+		"maxSpeed": 200,
+		"price": 6000
+	},
+	{
+		"model": "Kia Ceed's",
+		"engine": {
+			"@class": "by.owl.coursesproject.taxopark.engines.Gasoline"
+		},
+		"fuelConsumption": 6.8,
+		"maxSpeed": 200,
+		"price": 6000
+	},
+	{
+		"model": "Toyota Corolla",
+		"engine": {
+			"@class": "by.owl.coursesproject.taxopark.engines.Diesel"
+		},
+		"fuelConsumption": 6.6,
+		"maxSpeed": 270,
+		"price": 10000
+	},
+	{
+		"model": "Opel Zafira",
+		"engine": {
+			"@class": "by.owl.coursesproject.taxopark.engines.Gasoline"
+		},
+		"fuelConsumption": 6.6,
+		"maxSpeed": 180,
+		"price": 8000
+	}
+]

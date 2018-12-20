@@ -1,4 +1,4 @@
-package by.owl.coursesproject.taxopark.carArchitecture;
+package by.owl.coursesproject.taxopark.car;
 
 import by.owl.coursesproject.taxopark.engines.Diesel;
 import by.owl.coursesproject.taxopark.engines.Gasoline;

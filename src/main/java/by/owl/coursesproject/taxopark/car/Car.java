@@ -1,4 +1,4 @@
-package by.owl.coursesproject.taxopark.carArchitecture;
+package by.owl.coursesproject.taxopark.car;
 
 import by.owl.coursesproject.taxopark.engines.Engine;
 
@@ -9,6 +9,10 @@ public class Car {
 	private double fuelConsumption;
 	private int maxSpeed;
 	private int price;
+
+	public Car() {
+
+	}
 
 	public Car(String model, Engine engine, double fuelConsumption, int maxSpeed, int price) {
 		this.model = model;
