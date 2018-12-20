@@ -29,7 +29,7 @@ public class Car {
 	@Override
 	public String toString() {
 		return "Mark: " + model + ";\n\tprice: " + price + "$;\n\tmaxSpeed: " + maxSpeed
-				+ " kmph;\n\tfuel consumption: " + fuelConsumption + " per 100 km;\n\tengine: " + engine;
+				+ " kmph;\n\tfuel consumption: " + fuelConsumption + " per 100 km;\n\tengine: " + engine + "\n";
 	}
 
 	public String getModel() {
